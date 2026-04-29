@@ -1,8 +1,8 @@
 Checklist de accesibilidad – Formulario Participa
 
-Nombre del estudiante:
-Fecha:
-Nombre de la rama:
+Nombre del estudiante:Yosieth Rojas Farrayan
+Fecha:29/04/2026
+Nombre de la rama:Yosieth_Rojas
 
 1. ¿El formulario tiene un título claro?
 Respuesta:
