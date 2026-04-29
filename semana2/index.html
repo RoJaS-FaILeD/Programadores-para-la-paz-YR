@@ -1,2 +1,50 @@
-Hola
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semana 1</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Semana 1</h1>
+        <p class="subtitle">Trabajos y reflexiones</p>
+      </header>
+
+      <section class="card">
+        <h2>Preguntas</h2>
+        <pre id="preguntas">Cargando...</pre>
+      </section>
+
+      <section class="card">
+        <h2>Algoritmo</h2>
+        <pre id="algoritmo">Cargando...</pre>
+      </section>
+
+      <section class="card">
+        <h2>Reflexión</h2>
+        <pre id="reflexion">Cargando...</pre>
+      </section>
+    </main>
+
+    <script>
+      async function loadFile(url, id) {
+        try {
+          const r = await fetch(url);
+          const t = await r.text();
+          document.getElementById(id).textContent = t;
+        } catch (e) {
+          document.getElementById(id).textContent = 'No se pudo cargar el archivo.';
+        }
+      }
+      loadFile('/semana1/preguntas-semana1.txt', 'preguntas');
+      loadFile('/semana1/algoritmo-semana1.txt', 'algoritmo');
+      loadFile('/semana1/reflexion-semana1.txt', 'reflexion');
+    </script>
+  </body>
+</html>
+
 
