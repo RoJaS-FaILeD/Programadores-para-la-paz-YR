@@ -1,0 +1,14 @@
+pregunta9
+ respuesta: Es importante porque la terminal 
+permite trabajar más
+ rápido y tener mejor orden en los archivos del 
+ proyecto. Con comandos puedes moverte entre carpetas, 
+ crear, copiar o
+borrar archivos de forma más sencilla que solo con 
+clics. También es útil porque muchas herramientas 
+importantes como Git se usan desde la terminal, lo que 
+facilita el trabajo en equipo y el control de los 
+cambios en un proyecto. En pocas palabras, aprender a 
+usar la terminal te da más control sobre lo que haces y 
+te ayuda a trabajar de forma más organizada y 
+eficiente.
