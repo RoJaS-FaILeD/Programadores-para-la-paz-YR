@@ -1,0 +1,13 @@
+pregunta 5 
+respuesta:Es importante porque 
+permite llevar un control claro de todo lo que 
+pasa en el proyecto a lo largo del tiempo. En mi 
+opinión, usar herramientas como Git ayuda a 
+saber qué cambios se hicieron, quién los hizo y 
+en qué momento, lo que facilita mucho la 
+organización. Además, sirve para evitar 
+problemas: si algo sale mal, se puede volver a 
+una versión anterior sin perder todo el trabajo. 
+También es clave cuando varias personas trabajan 
+en el mismo proyecto, porque permite coordinarse 
+mejor y no sobrescribir el trabajo de otros.
