@@ -1,0 +1,34 @@
+                        Conceptos API - Semana 5
+
+--- ¿Qué hace esta ruta? ---
+
+app.post('/reporte', (req, res) => {
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
+});
+
+Esta ruta recibe una petición POST en la dirección /reporte.
+Cuando alguien envía una petición con un mensaje en el cuerpo (formato JSON),
+el servidor lo lee, lo guarda en la variable "mensaje" y responde con un
+objeto JSON que contiene dos datos:
+  - estado: confirma que el reporte fue recibido.
+  - mensaje: devuelve el mismo texto que se envió.
+
+Se usa el método POST porque se están enviando datos al servidor,
+no solo consultando información.
+
+
+--- ¿Para qué podría servir en una aplicación comunitaria? ---
+
+En una aplicación comunitaria esta ruta podría usarse para:
+
+  - Recibir reportes de problemas del barrio (baches, alumbrado, basura).
+  - Permitir que los vecinos envíen quejas o sugerencias al administrador.
+  - Registrar incidentes de seguridad reportados por la comunidad.
+  - Recibir solicitudes de ayuda o servicios desde un formulario web.
+
+En todos estos casos, el usuario llena un formulario, escribe su mensaje
+y lo envía al servidor, que lo recibe y confirma que llegó correctamente.
