@@ -16,6 +16,14 @@ app.get('/mensaje/:nombre', (req, res) => {
   res.send('Hola ' + nombre);
 });
 
+app.post('/reporte', (req, res) => {
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
+});
+
 app.listen(5000, '0.0.0.0', () => {
   console.log('Servidor ejecutándose en puerto 5000');
 });
