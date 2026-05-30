@@ -1,0 +1,18 @@
+                        Reflexion semana 5
+
+¿Cómo podrían las APIs ayudar a que las comunidades compartan
+información, reportes o alertas de manera organizada?
+
+Las APIs permiten que diferentes aplicaciones se comuniquen entre sí
+de forma estructurada, lo que las hace muy útiles para las comunidades.
+Por ejemplo, una comunidad podría tener una aplicación donde los vecinos
+reporten problemas como cortes de agua, baches o situaciones de riesgo,
+y esa información llegaría al servidor de forma ordenada mediante una API.
+Esto evita la confusión que genera compartir información por redes sociales
+sin ningún control, ya que cada reporte tendría un formato claro y definido.
+Además, las APIs permiten que distintos dispositivos, como celulares o
+computadores, envíen y reciban la misma información sin importar el sistema
+que usen. Así, las autoridades o líderes comunitarios podrían recibir alertas
+en tiempo real y responder más rápido a las necesidades de la comunidad.
+En conclusión, las APIs son una herramienta poderosa para organizar la
+participación ciudadana y mejorar la comunicación dentro de una comunidad.
