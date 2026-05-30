@@ -1,9 +1,34 @@
-const express = require('express');
-const app = express();
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-app.get('/', (req, res) => {
-  res.send('Servidor funcionando correctamente');
+const PORT = 5000;
+
+const server = http.createServer((req, res) => {
+  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  const ext = path.extname(filePath);
+
+  const mimeTypes = {
+    '.html': 'text/html',
+    '.css': 'text/css',
+    '.js': 'application/javascript',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+  };
+
+  const contentType = mimeTypes[ext] || 'text/plain';
+
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      res.writeHead(404, { 'Content-Type': 'text/html' });
+      res.end('<h1>404 - Archivo no encontrado</h1>');
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': contentType });
+    res.end(data);
+  });
 });
 
-app.listen(3000, () => {
-  console.log('Servidor ejecutándose en puerto 3000');
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
+});
