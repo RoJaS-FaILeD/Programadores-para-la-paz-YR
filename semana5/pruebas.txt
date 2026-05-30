@@ -1,0 +1,19 @@
+                        Pruebas de rutas - Semana 5
+
+GET /
+Muestra el mensaje "Servidor activo".
+Confirma que el servidor está corriendo correctamente.
+
+GET /saludo
+Muestra el mensaje "Hola comunidad".
+Es una ruta fija que siempre devuelve el mismo saludo.
+
+GET /mensaje/:nombre
+Muestra el mensaje "Hola " seguido del nombre que se escriba en la URL.
+Ejemplo: /mensaje/juan muestra "Hola juan".
+El valor del nombre cambia según lo que el usuario escriba.
+
+POST /reporte
+Recibe un mensaje en el cuerpo de la petición (formato JSON).
+Devuelve una respuesta JSON con el estado "Reporte recibido" y el mensaje enviado.
+Esta ruta no se puede probar desde el navegador, se necesita una herramienta como Postman.
